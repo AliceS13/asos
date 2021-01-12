@@ -197,6 +197,16 @@ export default {
         flex-direction: column;
         color: #666;
         font-weight: 400;
+        @media (max-width: 1024px) {
+            flex: 1 1 33.333%;   
+            margin: 0 0 10px 0;     
+        }
+        &:last-child {
+            @media (max-width: 1024px) {
+                border-top: 1px solid #ddd;
+                padding: 10px 0 0 0;
+            }
+        }
         &__body {
             display: flex;
             align-items: center;
